@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+    <bean id="engine1" class="com.example.L4springmvc.model.Engine" scope="prototype">
+        <property name="name" value="V8"/>
+        <property name="cc" value="8200"/>
+    </bean>
+
+    <bean id="engine2" class="com.example.L4springmvc.model.Engine" scope="prototype">
+        <property name="name" value="V10"/>
+        <property name="cc" value="10000"/>
+    </bean>
+    <bean id="engine3" class="com.example.L4springmvc.model.Engine" scope="prototype">
+        <property name="name" value="F1Engine"/>
+        <property name="cc" value="12000"/>
+    </bean>
+
+
+</beans>
