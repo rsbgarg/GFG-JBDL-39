@@ -1,0 +1,8 @@
+package io.bootify.l9_minor_project_01.repos;
+
+import io.bootify.l9_minor_project_01.domain.Store;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface StoreRepository extends JpaRepository<Store, Long> {
+}
